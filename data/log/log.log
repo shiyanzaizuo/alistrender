@@ -141,3 +141,136 @@ failed get storage
 [GIN] 2023/06/11 - 05:00:24 | 200 |       66.27µs |      42.3.25.62 | GET      "/assets/List.5982a785.js"
 [GIN] 2023/06/11 - 05:00:24 | 200 |       80.78µs |      42.3.25.62 | GET      "/assets/List.5982a785.js"
 [GIN] 2023/06/11 - 05:00:30 | 200 |  3.422542454s |      42.3.25.62 | POST     "/api/fs/list"
+[33mWARN[0m[2023-06-11 05:37:28] not enable search                            
+[33mWARN[0m[2023-06-11 05:37:28] not enable search                            
+[GIN] 2023/06/11 - 05:37:36 | 200 |      151.19µs |    1.162.18.126 | GET      "/"
+[GIN] 2023/06/11 - 05:37:36 | 200 |      623.84µs |    1.162.18.126 | GET      "/api/public/settings"
+[GIN] 2023/06/11 - 05:37:37 | 200 |      419.31µs |    1.162.18.126 | GET      "/api/me"
+[GIN] 2023/06/11 - 05:37:37 | 200 |      671.37µs |    1.162.18.126 | POST     "/api/fs/get"
+[GIN] 2023/06/11 - 05:37:37 | 200 |      296.81µs |    1.162.18.126 | POST     "/api/fs/list"
+[GIN] 2023/06/11 - 05:37:44 | 200 |  1.671860566s |    1.162.18.126 | POST     "/api/fs/list"
+[GIN] 2023/06/11 - 05:37:54 | 200 |      257.86µs |    1.162.18.126 | POST     "/api/fs/dirs"
+[GIN] 2023/06/11 - 05:37:56 | 200 |  508.766066ms |    1.162.18.126 | POST     "/api/fs/dirs"
+[31mERRO[0m[2023-06-11 05:37:58] failed move /mirce5/鸟类董磊21.7-22.6.xlsx to /mirce5/鸟类数据: The resource you are attempting to access is locked
+github.com/alist-org/alist/v3/internal/op.Move
+	/home/runner/work/alist/alist/internal/op/fs.go:378
+github.com/alist-org/alist/v3/internal/fs.move
+	/home/runner/work/alist/alist/internal/fs/other.go:32
+github.com/alist-org/alist/v3/internal/fs.Move
+	/home/runner/work/alist/alist/internal/fs/fs.go:65
+github.com/alist-org/alist/v3/server/handles.FsMove
+	/home/runner/work/alist/alist/server/handles/fsmanage.go:90
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.Auth
+	/home/runner/work/alist/alist/server/middlewares/auth.go:67
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.StoragesLoaded
+	/home/runner/work/alist/alist/server/middlewares/check.go:14
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/opt/hostedtoolcache/go/1.20.4/x64/src/net/http/server.go:2936
+net/http.(*conn).serve
+	/opt/hostedtoolcache/go/1.20.4/x64/src/net/http/server.go:1995
+runtime.goexit
+	/opt/hostedtoolcache/go/1.20.4/x64/src/runtime/asm_amd64.s:1598 
+[GIN] 2023/06/11 - 05:37:58 | 200 |  867.809976ms |    1.162.18.126 | POST     "/api/fs/move"
+[31mERRO[0m[2023-06-11 05:38:03] failed move /mirce5/鸟类董磊21.7-22.6.xlsx to /mirce5/鸟类数据: The resource you are attempting to access is locked
+github.com/alist-org/alist/v3/internal/op.Move
+	/home/runner/work/alist/alist/internal/op/fs.go:378
+github.com/alist-org/alist/v3/internal/fs.move
+	/home/runner/work/alist/alist/internal/fs/other.go:32
+github.com/alist-org/alist/v3/internal/fs.Move
+	/home/runner/work/alist/alist/internal/fs/fs.go:65
+github.com/alist-org/alist/v3/server/handles.FsMove
+	/home/runner/work/alist/alist/server/handles/fsmanage.go:90
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.Auth
+	/home/runner/work/alist/alist/server/middlewares/auth.go:67
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.StoragesLoaded
+	/home/runner/work/alist/alist/server/middlewares/check.go:14
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/opt/hostedtoolcache/go/1.20.4/x64/src/net/http/server.go:2936
+net/http.(*conn).serve
+	/opt/hostedtoolcache/go/1.20.4/x64/src/net/http/server.go:1995
+runtime.goexit
+	/opt/hostedtoolcache/go/1.20.4/x64/src/runtime/asm_amd64.s:1598 
+[GIN] 2023/06/11 - 05:38:03 | 200 |  315.129053ms |    1.162.18.126 | POST     "/api/fs/move"
+[31mERRO[0m[2023-06-11 05:38:09] failed move /mirce5/鸟类董磊21.7-22.6.xlsx to /mirce5: Invalid request
+github.com/alist-org/alist/v3/internal/op.Move
+	/home/runner/work/alist/alist/internal/op/fs.go:378
+github.com/alist-org/alist/v3/internal/fs.move
+	/home/runner/work/alist/alist/internal/fs/other.go:32
+github.com/alist-org/alist/v3/internal/fs.Move
+	/home/runner/work/alist/alist/internal/fs/fs.go:65
+github.com/alist-org/alist/v3/server/handles.FsMove
+	/home/runner/work/alist/alist/server/handles/fsmanage.go:90
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.Auth
+	/home/runner/work/alist/alist/server/middlewares/auth.go:67
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.StoragesLoaded
+	/home/runner/work/alist/alist/server/middlewares/check.go:14
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/opt/hostedtoolcache/go/1.20.4/x64/src/net/http/server.go:2936
+net/http.(*conn).serve
+	/opt/hostedtoolcache/go/1.20.4/x64/src/net/http/server.go:1995
+runtime.goexit
+	/opt/hostedtoolcache/go/1.20.4/x64/src/runtime/asm_amd64.s:1598 
+[GIN] 2023/06/11 - 05:38:09 | 200 |  278.147576ms |    1.162.18.126 | POST     "/api/fs/move"
+[GIN] 2023/06/11 - 05:38:13 | 200 |  362.677709ms |    1.162.18.126 | POST     "/api/fs/get"
+[GIN] 2023/06/11 - 05:38:13 | 200 |      3.1061ms |    1.162.18.126 | GET      "/assets/File.b7f154c2.js"
+[GIN] 2023/06/11 - 05:38:13 | 200 |    3.133009ms |    1.162.18.126 | GET      "/assets/File.b7f154c2.js"
+[GIN] 2023/06/11 - 05:38:17 | 200 |       244.2µs |    1.162.18.126 | POST     "/api/fs/list"
+[GIN] 2023/06/11 - 05:38:26 | 200 |      139.34µs |    1.162.18.126 | POST     "/api/fs/dirs"
+[GIN] 2023/06/11 - 05:38:28 | 200 |      144.65µs |    1.162.18.126 | POST     "/api/fs/dirs"
+[GIN] 2023/06/11 - 05:38:31 | 200 |  1.077399836s |    1.162.18.126 | POST     "/api/fs/copy"
+[GIN] 2023/06/11 - 05:38:31 | 200 |      212.67µs |    1.162.18.126 | POST     "/api/fs/list"
+[GIN] 2023/06/11 - 05:38:33 | 200 |  326.341702ms |    1.162.18.126 | POST     "/api/fs/list"
